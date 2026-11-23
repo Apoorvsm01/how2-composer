@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The life of a How2 prompt</title>
+<meta name="description" content="A click-through talk on designing the How2To composer for Apple Vision Pro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="viewport" id="viewport">
+  <div class="stage" id="stage" data-scene="title"></div>
+</div>
+<div class="hud" id="hud">
+  <button class="hud-btn" id="prev" aria-label="Previous">&larr;</button>
+  <span class="hud-count" id="count">1 / 1</span>
+  <button class="hud-btn" id="next" aria-label="Next">&rarr;</button>
+  <button class="hud-btn" id="all" aria-label="All beats (O)">O</button>
+</div>
+<div class="overview" id="overview" hidden></div>
+<script src="beats.js"></script>
+<script src="stage.js"></script>
+</body>
+</html>
